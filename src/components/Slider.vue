@@ -1,3 +1,43 @@
+<template>
+  <div class="relative">
+    <transition-group move-class="transition ease-in-out delay-150" name="fade" tag="div">
+
+      <div v-for="i in [currentIndex]" :key="i">
+        <div class="relative w-full h-3/4">
+          <img @load="startAnimation" class="w-screen" :src="currentImg"/>
+        </div>
+      </div>
+    </transition-group>
+
+    <div class="flex flex-col position absolute top-1/4 justify-between text-slate-200 h-[35%] w-[25%] right-[15%]">
+      <div class="animation-container">
+        <h3 :class="{ 'animated-active' : animationRun }" class="text-3xl font-light animated-text">// ما با شما
+          هستیم</h3>
+      </div>
+      <div class="animation-container">
+        <h1 :class="{ 'animated-active' : animationRun }" class="text-6xl font-semibold flex-wrap animated-title">گروه نرم افزاری طاد</h1>
+      </div>
+      <div class="animation-container">
+        <p :class="{ 'animated-active' : animationRun }" class="animated-paragraph text-lg font-light flex-wrap text-justify leading-6 w-[90%]">ما یک تیم نرم افزاری قوی از مهندسانی با
+          تجربه هستیم که تا پایان مسیر همراه شماییم. با ما بر شانه غول ها بایستید.</p>
+      </div>
+    </div>
+
+
+    <div class="flex absolute bottom-[10%] right-[15%] justify-between w-[10%]">
+      <button @click="prev()"
+              class="p-2 border-separate bg-transparent text-stone-400 hover:underline hover:text-slate-300">
+        <font-awesome-icon class="text-2xl" icon="fa-solid fa-arrow-right-long"/>
+
+      </button>
+      <button @click="next()" class="p-2 bg-transparent text-stone-400 hover:underline  hover:text-slate-300">
+        <font-awesome-icon class="text-2xl" icon="fa-solid fa-arrow-left-long"/>
+
+      </button>
+    </div>
+  </div>
+</template>
+
 
 <script>
 export default {
@@ -10,6 +50,7 @@ export default {
       ],
       timer: null,
       currentIndex: 0,
+      animationRun: false,
     };
   },
 
@@ -24,9 +65,24 @@ export default {
 
     next: function () {
       this.currentIndex += 1;
+      this.endAnimation();
+
     },
     prev: function () {
       this.currentIndex -= 1;
+      this.endAnimation();
+    },
+
+    startAnimation: function () {
+      setTimeout(this.showAnimation, 1000);
+    },
+
+    endAnimation: function () {
+      this.animationRun = false;
+    },
+
+    showAnimation: function () {
+      this.animationRun = true;
     },
   },
 
@@ -37,47 +93,6 @@ export default {
   }
 };
 </script>
-
-<template>
-  <div class="relative">
-    <transition-group move-class="transition ease-in-out delay-150" name="fade" tag="div">
-
-      <div v-for="i in [currentIndex]" :key="i">
-        <div class="relative w-full h-3/4">
-          <img class="w-screen" :src="currentImg" />
-        </div>
-      </div>
-    </transition-group>
-
-    <div class="flex flex-col position absolute top-1/4 justify-between text-slate-200 h-[35%] w-[25%] right-[15%]">
-      <div>
-        <h3 @transition-enter="startAnimation"
-          class="text-3xl font-light">// ما با شما هستیم</h3>
-      </div>
-      <div>
-        <h1 class="text-6xl font-semibold flex-wrap">گروه نرم افزاری طاد</h1>
-      </div>
-      <div>
-        <p class="text-lg font-light flex-wrap text-justify leading-6 w-[80%]">ما یک تیم نرم افزاری قوی از مهندسانی با
-          تجربه هستیم که تا پایان مسیر همراه شماییم. با ما بر شانه غول ها بایستید</p>
-      </div>
-    </div>
-
-
-
-    <div class="flex absolute bottom-[10%] right-[15%] justify-between w-[10%]">
-      <button @click="prev()"
-        class="p-2 border-separate bg-transparent text-stone-400 hover:underline hover:text-slate-300">
-        <font-awesome-icon class="text-2xl" icon="fa-solid fa-arrow-right-long" />
-
-      </button>
-      <button @click="next()" class="p-2 bg-transparent text-stone-400 hover:underline  hover:text-slate-300">
-        <font-awesome-icon class="text-2xl" icon="fa-solid fa-arrow-left-long" />
-
-      </button>
-    </div>
-  </div>
-</template>
 
 <style scoped>
 .fade-leave-active {
@@ -105,6 +120,42 @@ export default {
 .fade-enter-to {
   opacity: 1;
   transition: all 0.2s ease-out;
+}
+
+.animation-container {
+  position: relative;
+  height: 100px; /* Set the height of the container */
+}
+
+.animated-text {
+  position: absolute;
+  bottom: 0;
+  right: -30px;
+  opacity: 0;
+  transition: right 0.3s ease-in-out, opacity 0.5s ease-in-out; /* Define the transitions */
+}
+
+.animated-title {
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  opacity: 0;
+  transition: right 0.5s ease-in-out, opacity 0.3s ease-in-out; /* Define the transitions */
+  transition-delay: 300ms;
+}
+
+.animated-paragraph {
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  opacity: 0;
+  transition: right 0.2s ease-in-out, opacity 0.2s ease-in-out; /* Define the transitions */
+  transition-delay: 700ms;
+}
+
+.animated-active {
+  right: 0; /* Change the top position */
+  opacity: 1; /* Change the opacity */
 }
 
 
