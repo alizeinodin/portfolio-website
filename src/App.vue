@@ -11,6 +11,9 @@ import Products from "@/components/Products.vue"
     <Header></Header>
     <Slider></Slider>
     <Products></Products>
+    
+    <div class="w-full h-20"></div>
+
     <Brands></Brands>
 
     <RouterView/>
