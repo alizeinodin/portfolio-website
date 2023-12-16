@@ -1,0 +1,17 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'vazir';
+  font-style: normal;
+  src: url('/fonts/Vazir-Medium.eot') format('embedded-opentype'),
+  url('/fonts/Vazir-Medium.ttf') format('truetype'),
+  url('/fonts/Vazir-Medium.woff') format('woff'),
+  url('/fonts/Vazir-Medium.woff2') format('woff2');
+}
+
+body {
+  font-family: 'vazir';
+}
