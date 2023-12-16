@@ -15,7 +15,7 @@ export default {
 
 <template>
   <!-- Navbar for Large Screens -->
-  <nav class="bg-gray-200 w-full text-neutral-800 p-4 hidden md:block">
+  <nav class="bg-gray-50 w-full text-neutral-800 p-4 hidden md:block">
     <div class="container mx-auto flex justify-between items-center">
       <!-- Logo -->
       <div class="font-bold lg:text-xl text-lg">
