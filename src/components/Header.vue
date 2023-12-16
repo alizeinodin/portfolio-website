@@ -15,50 +15,81 @@ export default {
 
 <template>
   <!-- Navbar for Large Screens -->
-  <nav class="bg-blue-500 p-4 hidden md:block">
+  <nav class="bg-gray-100 w-full text-neutral-800 p-4 hidden md:block">
     <div class="container mx-auto flex justify-between items-center">
       <!-- Logo -->
-      <div class="text-white font-bold text-lg">
-        YourLogo
+      <div class="font-bold text-lg">
+        !TadGroup
       </div>
 
       <!-- Navigation Links -->
-        <div class="flex space-x-5 w-96 justify-between">
-          <a href="#" class="text-white hover:text-gray-300">Home</a>
-          <a href="#" class="text-white hover:text-gray-300">About Us</a>
-          <a href="#" class="text-white hover:text-gray-300">Contact Us</a>
-        </div>
+      <div class="flex space-x-5 xl:w-1/3 w-3/4 justify-between ">
+        <a href="#" class="hover:text-black">
+          <font-awesome-icon class="ml-1" icon="fa-solid fa-house-chimney" />
+          خانه
+        </a>
+        <a href="#" class="hover:text-black">
+          <font-awesome-icon class="ml-1" icon="fa-solid fa-laptop" />
+          خدمات ما
+        </a>
+        <a href="#" class="hover:text-black">
+          <font-awesome-icon class="ml-1" icon="fa-solid fa-building" />
+          درباره ما
+        </a>
+        <a href="#" class="hover:text-black">
+          <font-awesome-icon class="ml-1" icon="fa-solid fa-phone" />
+          ارتباط با ما
+        </a>
       </div>
+    </div>
   </nav>
 
   <!-- Navbar for Small Screens -->
-  <nav class="bg-blue-500 p-4 md:hidden">
+  <nav class="bg-gray-100 w-full text-neutral-800 p-2 md:hidden">
     <div class="container mx-auto flex justify-between items-center">
       <!-- Logo -->
-      <div class="text-white font-bold text-lg">
-        YourLogo
+      <div class="font-bold text-sm">
+        !TadGroup
       </div>
 
       <!-- Navigation Button (Hamburger Menu) -->
-      <button @click="toggleMenu" class="text-white focus:outline-none">
-        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-             xmlns="http://www.w3.org/2000/svg">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"></path>
+      <button @click="toggleMenu" class="text-neutral-800 focus:outline-none">
+        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
         </svg>
       </button>
     </div>
   </nav>
 
   <!-- Responsive Navigation Menu (Hidden by Default) -->
-  <div v-if="menuVisible" class="bg-blue-500 p-4 md:hidden">
-    <a href="#" class="text-white block py-2">Home</a>
-    <a href="#" class="text-white block py-2">About Us</a>
-    <a href="#" class="text-white block py-2">Contact Us</a>
-  </div>
+  <div v-if="menuVisible" class="bg-gray-100 flex flex-col space-y-1 text-neutral-800 text-sm p-4 md:hidden">
+    <div class="p-1 border-b">
+      <a href="#" class="hover:text-black">
+        <font-awesome-icon class="ml-1" icon="fa-solid fa-house-chimney" />
+        خانه
+      </a>
+    </div>
+    <div class="p-1 border-b">
 
+      <a href="#" class="hover:text-black">
+        <font-awesome-icon class="ml-1" icon="fa-solid fa-laptop" />
+        خدمات ما
+      </a>
+    </div>
+    <div class="p-1 border-b">
+      <a href="#" class="hover:text-black">
+        <font-awesome-icon class="ml-1" icon="fa-solid fa-building" />
+        درباره ما
+      </a>
+    </div>
+    <div class="p-1 border-b">
+
+      <a href="#" class="hover:text-black">
+        <font-awesome-icon class="ml-1" icon="fa-solid fa-phone" />
+        ارتباط با ما
+      </a>
+    </div>
+  </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
