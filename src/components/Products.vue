@@ -1,27 +1,23 @@
 <template>
   <div class="flex flex-col justify-center text-center my-12 align-middle ">
-    <div>
-      <p class="text-sm font-thin text-zinc-400">
-        { خدمات ما }
-      </p>
+    <div class="container mx-auto h-40">
+      <Heading
+          subtitle="خدمات ما" ,
+          title="ما چه خدماتی ارائه می دهیم؟"
+      ></Heading>
     </div>
-    <div class="mt-2">
-      <h2 class="text-2xl font-bold text-gray-600">
-        ما چه خدماتی ارائه می دهیم؟
-      </h2>
-    </div>
-  </div>
 
-  <div class="container mx-auto">
-    <div class="grid grid-cols-3 gap-20">
-      <div v-for="product in products">
-        <Product
-            :title="product.title"
-            :description="product.description"
-            :logo="product.logo"
-        ></Product>
+    <div class="container mx-auto">
+      <div class="grid grid-cols-3 gap-20">
+        <div v-for="product in products">
+          <Product
+              :title="product.title"
+              :description="product.description"
+              :logo="product.logo"
+          ></Product>
+        </div>
+
       </div>
-
     </div>
   </div>
 
@@ -29,9 +25,10 @@
 
 <script lang="ts">
 import Product from "@/components/Product.vue";
+import Heading from "@/components/Heading.vue";
 
 export default {
-  components: {Product},
+  components: {Heading, Product},
   data() {
     return {
       products: [
