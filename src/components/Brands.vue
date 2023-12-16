@@ -1,5 +1,7 @@
 <template>
-  <div class="h-28 bg-gray-50 px-[15%]">
+
+  <div class="xl:h-28 lg:h-14 md:h-10 bg-gray-50 hidden md:block  px-[15%]">
+  
     <swiper
         :slides-per-view="6"
         :space-between="10"
@@ -16,15 +18,44 @@
         @swiper="onSwiper"
         @slideChange="onSlideChange"
     >
-      <swiper-slide v-for="img in images" :key="img" class="min-h-[100px] mx-auto flex ">
-        <div class="w-[70%]">
+      <swiper-slide v-for="img in images" :key="img"
+                    class="xl:min-h-[100px] lg:min-h-[70px] md:min-h-[50px] mx-auto flex ">
+        <div class="xl:w-[70%] lg:w-[80%] md:w-[70%]">
           <a :href="img.link">
-            <img class="grayscale hover:grayscale-0 transition-all duration-1000 mt-10" :src="img.src" alt="">
+            <img class="grayscale hover:grayscale-0 transition-all duration-1000 xl:mt-10 lg:mt-4 md:mt-3"
+                 :src="img.src" alt="">
           </a>
         </div>
       </swiper-slide>
     </swiper>
   </div>
+  <div class="bg-gray-50 h-8 md:hidden px-[10%]">
+    <swiper
+        :slides-per-view="3"
+        :space-between="10"
+        allow-touch-move
+        autoplay
+        navigation
+        :pagination="{ clickable: true }"
+        :scrollbar="{ draggable: true }"
+        grid
+        grab-cursor
+        modules="modules"
+        rewind
+
+        @swiper="onSwiper"
+        @slideChange="onSlideChange"
+    >
+      <swiper-slide v-for="img in images" :key="img" class="min-h-[40px] mx-auto flex ">
+        <div class="w-[70%]">
+          <a :href="img.link">
+            <img class="grayscale hover:grayscale-0 transition-all duration-1000 mt-1.5" :src="img.src" alt="">
+          </a>
+        </div>
+      </swiper-slide>
+    </swiper>
+  </div>
+
 </template>
 <script>
 // Import Swiper Vue.js components

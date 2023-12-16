@@ -15,7 +15,7 @@ export default {
 
 <template>
   <!-- Navbar for Large Screens -->
-  <nav class="bg-gray-100 w-full text-neutral-800 p-4 hidden md:block">
+  <nav class="bg-gray-200 w-full text-neutral-800 p-4 hidden md:block">
     <div class="container mx-auto flex justify-between items-center">
       <!-- Logo -->
       <div class="font-bold lg:text-xl text-lg">
@@ -24,19 +24,19 @@ export default {
 
       <!-- Navigation Links -->
       <div class="flex space-x-5 xl:w-1/3 w-3/4 justify-between ">
-        <a href="#" class="hover:text-black">
+        <a href="#" class="hover:text-teal-800">
           <font-awesome-icon class="ml-1" icon="fa-solid fa-house-chimney" />
           خانه
         </a>
-        <a href="#" class="hover:text-black">
+        <a href="#" class="hover:text-teal-800">
           <font-awesome-icon class="ml-1" icon="fa-solid fa-laptop" />
           خدمات ما
         </a>
-        <a href="#" class="hover:text-black">
+        <a href="#" class="hover:text-teal-800">
           <font-awesome-icon class="ml-1" icon="fa-solid fa-building" />
           درباره ما
         </a>
-        <a href="#" class="hover:text-black">
+        <a href="#" class="hover:text-teal-800">
           <font-awesome-icon class="ml-1" icon="fa-solid fa-phone" />
           ارتباط با ما
         </a>
@@ -64,27 +64,27 @@ export default {
   <!-- Responsive Navigation Menu (Hidden by Default) -->
   <div v-if="menuVisible" class="bg-gray-100 flex flex-col space-y-1 text-neutral-800 text-sm p-4 md:hidden">
     <div class="p-1 border-b">
-      <a href="#" class="hover:text-black">
+      <a href="#" class="hover:text-teal-800">
         <font-awesome-icon class="ml-1" icon="fa-solid fa-house-chimney" />
         خانه
       </a>
     </div>
     <div class="p-1 border-b">
 
-      <a href="#" class="hover:text-black">
+      <a href="#" class="hover:text-teal-800">
         <font-awesome-icon class="ml-1" icon="fa-solid fa-laptop" />
         خدمات ما
       </a>
     </div>
     <div class="p-1 border-b">
-      <a href="#" class="hover:text-black">
+      <a href="#" class="hover:text-teal-800">
         <font-awesome-icon class="ml-1" icon="fa-solid fa-building" />
         درباره ما
       </a>
     </div>
     <div class="p-1 border-b">
 
-      <a href="#" class="hover:text-black">
+      <a href="#" class="hover:text-teal-800">
         <font-awesome-icon class="ml-1" icon="fa-solid fa-phone" />
         ارتباط با ما
       </a>

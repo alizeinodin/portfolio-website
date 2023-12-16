@@ -1,9 +1,9 @@
 <template>
-  <div class="relative min-h-[150px]">
+  <div class="relative">
     <transition-group move-class="transition ease-in-out delay-150" name="fade" tag="div">
 
       <div v-for="i in [currentIndex]" :key="i">
-        <div class="relative w-full min-h-1/2 h-3/4">
+        <div class="relative w-full xl:min-h-[800px] lg:min-h-[460px] md:min-h-[330px] sm:min-h-[200px] min-h-[180px] h-3/4">
           <img @load="startAnimation" class="w-screen" :src="currentImg"/>
         </div>
       </div>
