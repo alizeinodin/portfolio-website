@@ -9,21 +9,21 @@
       </div>
     </transition-group>
 
-    <div class="flex flex-col position absolute top-1/4 justify-between text-slate-200 lg:h-[35%] h-[20%] lg:w-[25%] w-[35%] right-[15%]">
+    <div class="flex flex-col position absolute top-1/4 justify-between text-slate-200 xl:h-[35%] h-[20%] xl:w-[25%] w-[35%] right-[15%]">
       <div class="animation-container hidden md:block">
-        <h3 :class="{ 'animated-active' : animationRun }" class="lg:text-3xl md:text-xl text-sm font-light animated-text">// ما با شما هستیم</h3>
+        <h3 :class="{ 'animated-active' : animationRun }" class="xl:text-3xl md:text-xl text-sm font-light animated-text">// ما با شما هستیم</h3>
       </div>
       <div class="animation-container">
-        <h1 :class="{ 'animated-active' : animationRun }" class="lg:text-6xl md:text-3xl text-base font-semibold flex-wrap animated-title">گروه نرم افزاری طاد</h1>
+        <h1 :class="{ 'animated-active' : animationRun }" class="xl:text-6xl md:text-3xl text-base font-semibold flex-wrap animated-title">گروه نرم افزاری طاد</h1>
       </div>
-      <div class="animation-container hidden lg:block">
-        <p :class="{ 'animated-active' : animationRun }" class="animated-paragraph lg:text-lg md:text-base font-light flex-wrap text-justify leading-6 w-[90%]">ما یک تیم نرم افزاری قوی از مهندسانی با
+      <div class="animation-container hidden xl:block">
+        <p :class="{ 'animated-active' : animationRun }" class="animated-paragraph xl:text-lg md:text-base font-light flex-wrap text-justify leading-6 w-[90%]">ما یک تیم نرم افزاری قوی از مهندسانی با
           تجربه هستیم که تا پایان مسیر همراه شماییم. با ما بر شانه غول ها بایستید.</p>
       </div>
     </div>
 
 
-    <div class="flex absolute bottom-[10%] right-[15%] justify-between lg:w-[10%] w-[30%]">
+    <div class="flex absolute bottom-[10%] right-[15%] justify-between xl:w-[10%] w-[25%]">
       <button @click="prev()"
               class="p-2 border-separate bg-transparent text-stone-400 hover:underline hover:text-slate-300">
         <font-awesome-icon class="lg:text-2xl" icon="fa-solid fa-arrow-right-long"/>

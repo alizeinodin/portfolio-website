@@ -18,7 +18,7 @@ export default {
   <nav class="bg-gray-100 w-full text-neutral-800 p-4 hidden md:block">
     <div class="container mx-auto flex justify-between items-center">
       <!-- Logo -->
-      <div class="font-bold text-lg">
+      <div class="font-bold lg:text-xl text-lg">
         !TadGroup
       </div>
 
