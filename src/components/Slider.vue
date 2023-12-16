@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="relative min-h-[150px]">
     <transition-group move-class="transition ease-in-out delay-150" name="fade" tag="div">
 
       <div v-for="i in [currentIndex]" :key="i">
