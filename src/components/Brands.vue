@@ -101,7 +101,7 @@ export default {
           link: 'https://google.com'
         },
         {
-          src: 'https://frontdesign.ir/template/engitech/wp-content/uploads/2020/03/client8.svg',
+          src: 'https://frontdesign.ir/template/engitech/wp-content/uploads/2020/03/client2.svg',
           link: 'https://google.com'
         },
       ],
