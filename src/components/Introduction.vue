@@ -1,10 +1,10 @@
 <template>
-  <div class="py-48 bg-gray-50">
+  <div class="py-32 bg-gray-50">
     <div class="container mx-auto flex justify-between content-center">
-    <div class="flex-1 px-4">
+    <div class="flex-1 px-10">
       <div class="flex flex-col h-72 justify-between">
         <div>
-          <h3 class="text-sm font-thin text-zinc-400">  در مورد ما</h3>
+          <h3 class="text-sm font-thin text-zinc-400">{  در مورد ما }</h3>
         </div>
         <div>
           <h1 class="text-4xl font-medium text-zinc-800 text-justify"> ما بهترین شریک تجاری شما
@@ -17,7 +17,7 @@
         </div>
       </div>
 
-      <div class="flex justify-between mt-20 ">
+      <div class="flex justify-between mt-20">
         <div class="flex-1 flex-col h-24 justify-between pl-4">
           <div>
             <h2 class="text-xl text-indigo-900">
@@ -26,7 +26,7 @@
           <div class="border mt-2"></div>
 
           </div>
-          <div class="mt-4 text-zinc-500">
+          <div class="mt-4 text-zinc-500 text-justify">
             <p>
               تیم بزرگ ما از بیش از 1400 متخصص نرم افزار.
             </p>
@@ -40,7 +40,7 @@
           <div class="border mt-2"></div>
 
           </div>
-          <div class="mt-4 text-zinc-500">
+          <div class="mt-4 text-zinc-500 text-justify">
             <p>
               ما به شما کمک خواهیم کرد تا ضمن به اشتراک گذاشتن ، ایده های جدید و جسورانه را آزمایش کنید.
             </p>
