@@ -8,6 +8,9 @@ module.exports = {
                 vazir: ['vazir', 'sans-serif'],
             },
         },
+        boxShadow: {
+            'shadow-1': '3px 3px 13px 0 rgba(0, 0, 0, 0.1)'
+        }
     },
     variants: {
         extend: {},

@@ -7,6 +7,7 @@ import Products from "@/components/Products.vue"
 import Introduction from "@/components/Introduction.vue"
 import Statistics from "@/components/Statistics.vue"
 import OurTeam from "@/components/OurTeam.vue";
+import Comments from "@/components/Comments.vue";
 </script>
 
 <template>
@@ -26,6 +27,8 @@ import OurTeam from "@/components/OurTeam.vue";
     <Statistics></Statistics>
 
     <OurTeam></OurTeam>
+
+    <Comments></Comments>
 
     <RouterView/>
   </div>
