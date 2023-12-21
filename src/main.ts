@@ -19,6 +19,8 @@ import {
     faLaptop,
     faPhone
 } from '@fortawesome/free-solid-svg-icons'
+import Vue3Autocounter from "vue3-autocounter";
+import ScrollLoader from 'vue-scroll-loader'
 
 
 /* add icons to the library */
@@ -33,9 +35,10 @@ library.add(
 )
 
 
-const app = createApp(App).component('font-awesome-icon', FontAwesomeIcon)
+const app = createApp(App).component('font-awesome-icon', FontAwesomeIcon).component('vue3-autocounter', Vue3Autocounter)
 
 app.use(createPinia())
 app.use(router)
+app.use(ScrollLoader)
 
 app.mount('#app')
