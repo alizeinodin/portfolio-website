@@ -5,6 +5,7 @@ import Slider from "@/components/Slider.vue";
 import Brands from "@/components/Brands.vue";
 import Products from "@/components/Products.vue"
 import Introduction from "@/components/Introduction.vue"
+import Statistics from "@/components/Statistics.vue"
 </script>
 
 <template>
@@ -17,9 +18,11 @@ import Introduction from "@/components/Introduction.vue"
 
     <Brands></Brands>
 
-    <div class="w-full h-10 bg-slate-200"></div>
+    <div class="w-full h-10 bg-slate-200 "></div>
 
     <Introduction></Introduction>
+
+    <Statistics></Statistics>
 
     <RouterView/>
   </div>
