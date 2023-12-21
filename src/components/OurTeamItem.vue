@@ -1,0 +1,25 @@
+<template>
+  <div class="flex flex-col transition-all duration-700 bg-gray-50 cursor-pointer pb-4 justify-between items-center text-center hover:bg-white hover:shadow-2xl">
+    <div class="">
+      <img :src=this.img alt="{{ this.name }}">
+    </div>
+    <div class="mt-5">
+      <div>
+        <h2 class="text-2xl text-gray-950">{{ this.name }}</h2>
+      </div>
+      <div>
+        <p class="text-sm text-gray-600 mt-2">{{ this.position }}</p>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script lang="ts">
+export default {
+  props: ['img', 'name', 'position'],
+}
+</script>
+
+<style scoped>
+
+</style>
