@@ -1,6 +1,6 @@
 <template>
   <div class="w-ful bg-slate-200 block">
-    <div class="container mx-auto h-40 pt-10 text-center">
+    <div class="container mx-auto lg:h-40 h-24 lg:pt-10 pt-5 text-center">
       <Heading
           subtitle="همکاران ما" ,
           title="ما با چه شرکت هایی همکاری کرده ایم؟"
@@ -52,7 +52,7 @@
           @slideChange="onSlideChange"
       >
         <swiper-slide v-for="img in images" :key="img" class="min-h-[40px] mx-auto flex ">
-          <div class="w-[70%]">
+          <div class="lg:w-[70%] w-[90%]">
             <a :href="img.link">
               <img class="grayscale hover:grayscale-0 transition-all duration-1000 mt-1.5" :src="img.src" alt="">
             </a>
