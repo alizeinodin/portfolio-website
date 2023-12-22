@@ -8,8 +8,8 @@
       >
       </Heading>
     </div>
-    <div class="container flex justify-between mx-auto">
-      <div>
+    <div class="container flex flex-wrap  lg:justify-between lg:text-right  justify-center mx-auto lg:space-y-0 space-y-3">
+      <div class="w-[90%] lg:w-fit">
         <StatisticsItem
             number="30"
             operator="+"
@@ -17,7 +17,7 @@
         >
         </StatisticsItem>
       </div>
-      <div>
+      <div class="w-[90%] lg:w-fit">
         <StatisticsItem
             number="97"
             operator="%"
@@ -25,7 +25,7 @@
         >
         </StatisticsItem>
       </div>
-      <div>
+      <div class="w-[90%] lg:w-fit">
         <StatisticsItem
             number="746"
             operator="+"
@@ -33,7 +33,7 @@
         >
         </StatisticsItem>
       </div>
-      <div>
+      <div class="w-[90%] lg:w-fit">
         <StatisticsItem
             number="100"
             operator="+"
