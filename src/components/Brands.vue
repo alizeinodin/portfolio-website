@@ -35,7 +35,7 @@
         </swiper-slide>
       </swiper>
     </div>
-    <div class="bg-gray-50 h-8 md:hidden px-[10%]">
+    <div class="xl:h-28 lg:h-14 md:h-10 md:hidden px-[15%]">
       <swiper
           :slides-per-view="3"
           :space-between="10"
@@ -48,7 +48,6 @@
           grab-cursor
           modules="modules"
           rewind
-
           @swiper="onSwiper"
           @slideChange="onSlideChange"
       >
