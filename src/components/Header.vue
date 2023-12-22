@@ -15,15 +15,16 @@ export default {
 
 <template>
   <!-- Navbar for Large Screens -->
+  <div class="bg-indigo-950 w-full h-2"></div>
   <nav class="bg-gray-50 w-full text-neutral-800 p-4 hidden md:block">
     <div class="container mx-auto flex justify-between items-center">
       <!-- Logo -->
-      <div class="font-bold lg:text-xl text-lg">
+      <div class="font-bold lg:text-xl text-lg text-indigo-950">
         !TadGroup
       </div>
 
       <!-- Navigation Links -->
-      <div class="flex space-x-5 xl:w-1/3 w-3/4 justify-between ">
+      <div class="flex space-x-5 xl:w-1/3 w-3/4 justify-between text-indigo-950">
         <a href="#" class="hover:text-teal-800">
           <font-awesome-icon class="ml-1" icon="fa-solid fa-house-chimney" />
           خانه
