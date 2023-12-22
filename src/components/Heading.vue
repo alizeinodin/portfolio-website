@@ -1,11 +1,11 @@
 <template>
   <div>
-    <p class="text-sm font-thin text-zinc-400">
+    <p class="lg:text-sm text-xs font-thin text-zinc-400">
       { {{ this.subtitle }} }
     </p>
   </div>
   <div class="mt-2">
-    <h2 class="text-2xl font-bold" :class="this.color">
+    <h2 class="lg:text-2xl text-lg font-bold" :class="this.color">
       {{ this.title }}
     </h2>
   </div>
