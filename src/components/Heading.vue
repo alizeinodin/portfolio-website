@@ -5,7 +5,7 @@
     </p>
   </div>
   <div class="mt-2">
-    <h2 class="lg:text-2xl text-lg font-bold" :class="this.color">
+    <h2 class="lg:text-2xl text-sm font-bold" :class="this.color">
       {{ this.title }}
     </h2>
   </div>
