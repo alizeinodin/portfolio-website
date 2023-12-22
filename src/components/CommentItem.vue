@@ -6,16 +6,16 @@
       </div>
       <div class="mr-4">
         <div class="flex flex-col">
-          <div class="text-gray-950 text-xl">
+          <div class="text-gray-950 lg:text-xl text-md">
             <h2>{{ this.name }}</h2>
           </div>
-          <div class="text-sm text-gray-400 mt-2">
+          <div class="lg:text-sm text-xs text-gray-400 mt-2">
             <p> {{ this.position }} </p>
           </div>
         </div>
       </div>
     </div>
-    <div class="text-justify text-gray-500 mt-8">
+    <div class="text-justify text-sm lg:text-md text-gray-500 mt-8">
         <p>
           {{ this.text }}
         </p>
