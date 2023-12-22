@@ -1,3 +1,4 @@
+import { faUikit } from '@fortawesome/free-brands-svg-icons';
 import './assets/index.css'
 
 import {createApp} from 'vue'
@@ -17,8 +18,15 @@ import {
     faCode,
     faHouseChimney,
     faLaptop,
-    faPhone
+    faPhone,
+    faMobile,
+    faPenNib,
+    faVial,
+    faPeopleGroup
 } from '@fortawesome/free-solid-svg-icons'
+import {
+    faApple
+} from '@fortawesome/free-brands-svg-icons'
 import Vue3Autocounter from "vue3-autocounter";
 import ScrollLoader from 'vue-scroll-loader'
 
@@ -31,7 +39,12 @@ library.add(
     faLaptop,
     faBuilding,
     faPhone,
-    faCode
+    faCode,
+    faMobile,
+    faPenNib,
+    faVial,
+    faApple,
+    faPeopleGroup
 )
 
 
