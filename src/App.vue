@@ -8,6 +8,7 @@ import Introduction from "@/components/Introduction.vue"
 import Statistics from "@/components/Statistics.vue"
 import OurTeam from "@/components/OurTeam.vue";
 import Comments from "@/components/Comments.vue";
+import Footer from "@/components/Footer.vue";
 </script>
 
 <template>
@@ -29,6 +30,8 @@ import Comments from "@/components/Comments.vue";
     <OurTeam></OurTeam>
 
     <Comments></Comments>
+
+    <Footer></Footer>
 
     <RouterView/>
   </div>
