@@ -57,7 +57,7 @@ export default {};
           <h2 class="text-gray-50 text-2xl">اشتراک در خبرنامه</h2>
           <div class="border border-gray-400 mt-2 w-28"></div>
         </div>
-        <div class="mt-8 text-gray-300 flex flex-col space-y-3">
+        <div class="mt-8 text-gray-300 flex flex-col space-y-5">
           <div class="flex">
             <input type="text" id="news"
                    class="bg-white border border-indigo-300 text-gray-900 text-sm rounded-r-md focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
