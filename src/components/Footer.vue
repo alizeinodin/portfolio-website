@@ -12,7 +12,7 @@ export default {};
             <h2 class="text-gray-50 lg:text-2xl text-base">TadGroup</h2>
             <div class="border border-gray-400 mt-2 lg:w-28 w-20"></div>
           </div>
-          <div class="lg:mt-8 mt-4 text-gray-300 lg:text-md text-xs w-80 text-justify">
+          <div class="lg:mt-8 mt-4 text-gray-300 lg:text-base text-xs w-80 text-justify">
             <p>گروه نرم افزاری تاد | ما در سال ۸۲ شروع به فعالیت کردیم. و هم اکنون بزرگ ترین گروه نرم افزاری در ایران
               هستیم. </p>
           </div>
