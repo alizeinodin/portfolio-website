@@ -8,7 +8,7 @@
     </div>
 
     <div class="container mx-auto">
-      <div class="grid grid-cols-3 gap-20">
+      <div class="grid lg:grid-cols-3 grid-cols-1 gap-20">
         <div v-for="product in products">
           <Product
               :title="product.title"

@@ -2,18 +2,18 @@
   <div class="container">
     <div class="flex justify-between">
       <div class="flex-1">
-        <font-awesome-icon class="text-4xl text-indigo-950 hover:text-yellow-600 transition-all duration-1000"
+        <font-awesome-icon class="lg:text-4xl text-2xl text-indigo-950 hover:text-yellow-600 transition-all duration-1000"
                            :icon="this.logo"/>
       </div>
 
       <div class="flex-2 flex-col justify-start w-[85%] h-20">
         <div class="mr-2 text-right">
-          <h2 class="text-xl font-bold text-slate-800">
+          <h2 class="lg:text-xl text-md font-bold text-slate-800">
             {{ this.title }}
           </h2>
         </div>
-        <div>
-          <p class="flex flex-wrap text-justify text-gray-600 mt-5">
+        <div class="w-[90%] lg:w-full">
+          <p class="flex flex-wrap text-justify text-gray-600 lg:px-0 mt-5 text-sm">
             {{ this.description }}
           </p>
         </div>
