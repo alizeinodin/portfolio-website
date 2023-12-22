@@ -13,25 +13,6 @@ import Footer from "@/components/Footer.vue";
 
 <template>
   <div dir="rtl">
-    <Header></Header>
-    <Slider></Slider>
-    <Products></Products>
-    
-    <div class="w-full h-20"></div>
-
-    <Brands></Brands>
-
-    <div class="w-full h-10 bg-slate-200 "></div>
-
-    <Introduction></Introduction>
-
-    <Statistics></Statistics>
-
-    <OurTeam></OurTeam>
-
-    <Comments></Comments>
-
-    <Footer></Footer>
 
     <RouterView/>
   </div>
