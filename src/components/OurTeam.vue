@@ -46,12 +46,11 @@
 
 
 <script lang="ts">
-import StatisticsItem from "@/components/StatisticsItem.vue"
 import Heading from "@/components/Heading.vue";
 import OurTeamItem from "@/components/OurTeamItem.vue";
 
 export default {
-  components: {OurTeamItem, Heading, StatisticsItem}
+  components: {OurTeamItem, Heading}
 
 }
 
