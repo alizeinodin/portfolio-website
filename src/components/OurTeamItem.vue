@@ -5,10 +5,10 @@
     </div>
     <div class="flex flex-col justify-center py-5">
       <div>
-        <h2 class="text-2xl text-gray-950">{{ this.name }}</h2>
+        <h2 class="lg:text-2xl text-md text-gray-950">{{ this.name }}</h2>
       </div>
       <div>
-        <p class="text-sm text-gray-600 mt-2">{{ this.position }}</p>
+        <p class="lg:text-sm text-xs text-gray-600 mt-2">{{ this.position }}</p>
       </div>
     </div>
   </div>

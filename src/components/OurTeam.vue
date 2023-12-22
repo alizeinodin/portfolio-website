@@ -7,7 +7,7 @@
       >
       </Heading>
     </div>
-    <div class="container px-10 flex justify-between mx-auto">
+    <div class="container px-10 flex flex-wrap md:flex-nowrap justify-between mx-auto">
       <div>
         <OurTeamItem
             img="https://frontdesign.ir/template/engitech/wp-content/uploads/2020/01/member1.jpg"
