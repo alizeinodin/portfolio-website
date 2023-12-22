@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-20 pt-10 bg-indigo-700">
+  <div class="pb-20 pt-10 bg-indigo-950 bg-[url('/img/endless-constellation.svg')]">
     <div class="container h-32 mx-auto text-center">
       <Heading
           subtitle="آمار ما"
