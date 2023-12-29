@@ -48,15 +48,12 @@
 
 
 <script lang="ts">
-import StatisticsItem from "@/components/StatisticsItem.vue"
 import Heading from "@/components/Heading.vue";
-import OurTeamItem from "@/components/OurTeamItem.vue";
 import CommentItem from "@/components/CommentItem.vue";
-import {Swiper, SwiperSlide} from 'swiper/vue';
 
 
 export default {
-  components: {CommentItem, OurTeamItem, Heading, StatisticsItem, Swiper, SwiperSlide}
+  components: {CommentItem, Heading,}
 
 }
 
