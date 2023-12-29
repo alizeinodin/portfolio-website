@@ -18,17 +18,17 @@ export default {
   <div>
     <div>
       <p class="lg:text-sm text-xs font-thin text-indigo-700">
-        { {{ this.subtitle }} }
+        { {{ subtitle }} }
       </p>
     </div>
     <div class="mt-8 w-3/4">
-      <h2 class="lg:text-4xl text-sm font-bold" :class="this.color">
-        {{ this.title }}
+      <h2 class="lg:text-4xl text-base font-bold">
+        {{ title }}
       </h2>
     </div>
-    <div class="mt-10 text-justify text-gray-700 w-3/4">
+    <div class="mt-10 text-justify lg:text-base text-sm text-gray-700 w-3/4">
       <p>
-        {{ this.content }}
+        {{ content }}
       </p>
     </div>
   </div>
