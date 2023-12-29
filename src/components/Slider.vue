@@ -38,16 +38,15 @@
 </template>
 
 
-<script>
+<script lang="ts">
 export default {
-  name: "Slider",
   data() {
     return {
       images: [
         "https://frontdesign.ir/template/engitech/wp-content/uploads/2020/04/slide1-home1.jpg",
         "https://frontdesign.ir/template/engitech/wp-content/uploads/2020/04/slide2-home1.jpg",
       ],
-      timer: null,
+      timer: 0 as number,
       currentIndex: 0,
       animationRun: false,
     };
@@ -59,7 +58,7 @@ export default {
 
   methods: {
     startSlide: function () {
-      this.timer = setInterval(this.next, 10000);
+      this.timer = setInterval(this.next, 10000) ;
     },
 
     next: function () {
