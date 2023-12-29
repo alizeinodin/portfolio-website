@@ -16,15 +16,10 @@
           navigation
           :pagination="{ clickable: true }"
           :scrollbar="{ draggable: true }"
-          grid
           grab-cursor
-          modules="modules"
           rewind
-
-          @swiper="onSwiper"
-          @slideChange="onSlideChange"
       >
-        <swiper-slide v-for="img in images" :key="img"
+        <swiper-slide v-for="img in images" :key="img.link"
                       class="xl:min-h-[100px] lg:min-h-[70px] md:min-h-[50px] mx-auto flex ">
           <div class="xl:w-[70%] lg:w-[80%] md:w-[70%]">
             <a :href="img.link">
@@ -44,14 +39,10 @@
           navigation
           :pagination="{ clickable: true }"
           :scrollbar="{ draggable: true }"
-          grid
           grab-cursor
-          modules="modules"
           rewind
-          @swiper="onSwiper"
-          @slideChange="onSlideChange"
       >
-        <swiper-slide v-for="img in images" :key="img" class="min-h-[40px] mx-auto flex ">
+        <swiper-slide v-for="img in images" :key="img.link" class="min-h-[40px] mx-auto flex ">
           <div class="lg:w-[70%] w-[90%]">
             <a :href="img.link">
               <img class="grayscale hover:grayscale-0 transition-all duration-1000 mt-1.5" :src="img.src" alt="">
@@ -63,7 +54,7 @@
   </div>
 
 </template>
-<script>
+<script lang="ts">
 // Import Swiper Vue.js components
 import {Swiper, SwiperSlide} from 'swiper/vue';
 
@@ -112,16 +103,6 @@ export default {
     SwiperSlide,
   },
   setup() {
-    const onSwiper = (swiper) => {
-      console.log(swiper);
-    };
-    const onSlideChange = () => {
-      console.log('slide change');
-    };
-    return {
-      onSwiper,
-      onSlideChange,
-    };
-  }
+  },
 };
 </script>
