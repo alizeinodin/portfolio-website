@@ -5,8 +5,8 @@ import AboutUsSection from "@/components/AboutUsSection.vue";
 </script>
 
 <template>
-  <div class="flex justify-between items-center container mx-auto h-50vh py-5 my-20 px-20">
-    <div class="flex-1">
+  <div class="flex lg:flex-nowrap lg:justify-between lg:items-center container mx-auto h-50vh lg:py-5  lg:my-20 my-14 lg:px-20">
+    <div class="lg:flex-1 ">
       <AboutUsDetails
           subtitle="آنچه ما ارائه می دهیم"
           title="شریک زندگی شما در نوآوری نرم افزار هستیم"
@@ -19,7 +19,7 @@ import AboutUsSection from "@/components/AboutUsSection.vue";
 
       </AboutUsDetails>
     </div>
-    <div class="flex-1">
+    <div class="lg:flex-1 hidden lg:block">
       <AboutUsSection></AboutUsSection>
     </div>
   </div>
