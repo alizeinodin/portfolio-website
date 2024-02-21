@@ -29,7 +29,7 @@ export default {
           <font-awesome-icon class="ml-1" icon="fa-solid fa-house-chimney" />
           خانه
         </router-link>
-        <router-link to="/" class="hover:text-yellow-600">
+        <router-link to="/services" class="hover:text-yellow-600">
           <font-awesome-icon class="ml-1" icon="fa-solid fa-laptop" />
           خدمات ما
         </router-link>
