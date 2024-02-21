@@ -71,7 +71,7 @@ export default {
         </router-link>
     </div>
     <div class="p-1 border-b">
-      <router-link to="/" class="hover:text-yellow-600">
+      <router-link to="/services" class="hover:text-yellow-600">
           <font-awesome-icon class="ml-1" icon="fa-solid fa-laptop" />
           خدمات ما
         </router-link>
