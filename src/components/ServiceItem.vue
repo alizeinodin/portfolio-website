@@ -19,7 +19,7 @@ export default {
       type: String,
     },
     cost: {
-      type: Number,
+      type: String,
     },
 
   }
