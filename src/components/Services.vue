@@ -11,7 +11,7 @@ export default {
   <div class="w-full flex justify-center">
     <div class="grid xl:grid-cols-3 md:grid-cols-1 gap-12 xl:my-28 my-12 px-3">
       <ServiceItem
-          img="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+          img="/img/service.jpeg"
           img-alt="طراحی سایت"
           title="طراحی وب سایت"
           description="طراحی وب سایت خود را به تیم قدرتمند تاد بسپارید. برای استفاده از خدمات طراحی سایت می توانید نیازمندی درخواست خود را با ما درمیان بگذارید تا کارشناسان ما در اسرع وقت با شما تماس بگیرند."
@@ -20,7 +20,7 @@ export default {
       ></ServiceItem>
 
       <ServiceItem
-          img="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+          img="/img/service.jpeg"
           img-alt="طراحی نرم افزار"
           title="طراحی اپلیکیشن"
           description="طراحی وب سایت خود را به تیم قدرتمند تاد بسپارید. برای استفاده از خدمات طراحی سایت می توانید نیازمندی درخواست خود را با ما درمیان بگذارید تا کارشناسان ما در اسرع وقت با شما تماس بگیرند."
@@ -29,7 +29,7 @@ export default {
       ></ServiceItem>
 
       <ServiceItem
-          img="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
+          img="/img/service.jpeg"
           img-alt="تست نفوذ"
           title="تست نفوذ و امنیت"
           description="طراحی وب سایت خود را به تیم قدرتمند تاد بسپارید. برای استفاده از خدمات طراحی سایت می توانید نیازمندی درخواست خود را با ما درمیان بگذارید تا کارشناسان ما در اسرع وقت با شما تماس بگیرند."
