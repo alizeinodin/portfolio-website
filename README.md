@@ -156,4 +156,4 @@ This repository started as a coursework deliverable for the **Internet Engineeri
 
 ## License
 
-This project is provided for educational and portfolio purposes. If you reuse parts of it, please credit the author.
+Released under the [MIT License](LICENSE).
